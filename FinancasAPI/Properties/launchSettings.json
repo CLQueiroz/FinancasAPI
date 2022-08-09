@@ -27,6 +27,12 @@
       "sqlDebugging": true,
       "applicationUrl": "http://localhost:5000",
       "nativeDebugging": false
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true
     }
   }
 }
