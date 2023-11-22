@@ -39,6 +39,7 @@ namespace FinanceApp.Api.Repositories
         {
             try
             {
+
                 List<Receita> queryReceita = new List<Receita>();
                 List<Receita> retornoReceita = new List<Receita>();
 
