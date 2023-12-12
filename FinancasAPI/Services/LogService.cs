@@ -76,15 +76,18 @@ namespace FinanceApp.Api.Services
         {
             try
             {
-                GravarLog(new Log
-                {
-                    Acao = acao,
-                    Retorno = retorno,
-                    StatusCode = StatusCodes.Status200OK,
-                    UsuarioNome = "AdministradorSistema",
-                    DataAcao = DateTime.Now,
-                    RemoteIpCliente = ObterIpClienteRemote()
-                });
+                if(acao != "") 
+                {            
+                    GravarLog(new Log
+                    {
+                        Acao = acao,
+                        Retorno = retorno,
+                        StatusCode = StatusCodes.Status200OK,
+                        UsuarioNome = "AdministradorSistema",
+                        DataAcao = DateTime.Now,
+                        RemoteIpCliente = ObterIpClienteRemote()
+                    });
+                }
             }
             catch (Exception)
             {
